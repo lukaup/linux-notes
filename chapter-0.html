@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>第 0 章 导学与学习地图 · Linux 复习笔记</title>
+<meta name="description" content="第 0 章 导学与学习地图：先看地图再出发：这套课怎么学、怎么练、怎么复习">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="progress"></div>
+<header class="topbar">
+  <div class="topbar-inner">
+    <a class="brand" href="index.html"><span class="dot"></span>Linux 复习笔记</a>
+    <nav class="topnav">
+      <a href="index.html">目录</a>
+      <a href="chapter-1.html">第 1 章</a>
+      <a href="tree.html">知识树</a>
+      <a href="assets/linux-review.docx">Word 下载</a>
+    </nav>
+  </div>
+</header>
+
+<main class="wrap" id="top">
+  <div class="crumb"><a href="index.html">← 目录</a> / 第 0 章</div>
+  <section class="chapter-hero" style="--c:#5B6B84">
+    <div class="ch-badge">CHAPTER 00</div>
+    <h1>导学与学习地图</h1>
+    <p>先看地图再出发：这套课怎么学、怎么练、怎么复习</p>
+    <div class="ch-meta"><span>1 节</span><span>★☆☆☆☆ 入门</span><span>建议 0.5 天（约 1 小时）</span></div>
+  </section>
+
+  <div class="toc">
+    <div class="toc-head"><span>本章目录</span><span>点击小节跳转</span></div>
+    <div class="toc-grid"><div class="toc-group"><h3>学习地图</h3><a href="#0-01"><b>0-01</b>Linux 导学：课程地图与学习方法</a></div></div>
+  </div>
+
+  <div class="note"><strong>本章目标：</strong>了解整套课程的结构、学习顺序和方法，搭好学习环境，建立“命令—场景—排错”的学习闭环。<br><strong>为什么学：</strong>零基础最容易“跟着视频敲一遍，关掉就忘”。先建立地图，知道每一章在整个 Linux 体系里的位置，学习才不会碎片化。</div>
+
+  <section class="lesson" id="0-01" style="--c:#5B6B84"><div class="lesson-head"><span class="lid">0-01</span><h2>Linux 导学：课程地图与学习方法</h2></div><div class="core"><b>一句话核心</b>整套课的主线是“先搭环境，再练命令，再懂权限，再管系统，最后部署软件”；每节按“懂、练、测、记”四步学。</div><h3>本节要解决的问题</h3><p>很多同学一上来就问“命令太多记不住怎么办”。答案不是死记，而是先知道命令属于哪个场景，再用重复和排错把它变成本能。</p><h3>核心概念（小白也能懂）</h3><dl class="concepts"><div><dt>学习闭环</dt><dd>理解概念 → 动手敲 → 看输出/报错 → 总结成自己的话，循环往复。</dd></div><div><dt>三层笔记</dt><dd>命令速查（是什么）、场景笔记（什么时候用）、错题本（为什么错）。</dd></div><div><dt>最小环境</dt><dd>一台能 SSH 的 CentOS 7 虚拟机，足够学完前四章；第五章再扩到 3 台。</dd></div><div><dt>知识树</dt><dd>把零散命令挂到“章节 → 场景 → 命令”的树上，复习时按树回忆。</dd></div></dl><h3>拆开讲</h3><p>课程结构：第 1 章解决“Linux 是什么、环境怎么搭”；第 2 章解决“怎么用命令操作文件”；第 3 章解决“谁能操作、能操作到什么程度”；第 4 章解决“怎么管一台服务器”；第 5 章解决“怎么把软件真正部署跑起来”。</p><p>学习顺序不要跳：第 2 章不熟，第 4 章的网络/进程/日志会看不懂；第 3 章权限不懂，第 5 章装软件必被 Permission denied 卡住。可以快，但不能跳。</p><p>每节按四步：<strong>懂</strong>（看核心概念和类比）、<strong>练</strong>（在虚拟机逐条敲，故意制造报错）、<strong>测</strong>（做自测，能讲出来才算会）、<strong>记</strong>（把命令和坑写进笔记）。视频是“导游”，动手才是“走路”。</p><p>复习方法：第一轮按章节顺序过一遍；第二轮只看知识树和命令速查，遮住答案回忆；第三轮专攻错题和易混点（绝对/相对、软/硬链接、su/sudo、find/grep）。</p><h3>命令/操作速查</h3><p class="cap">60 节课程地图</p><div class="table-wrap"><table style="min-width:520px"><thead><tr><th>章节</th><th>节数</th><th>核心任务</th><th>学完能做到</th></tr></thead><tbody><tr><td>第 1 章 基础与环境</td><td>9</td><td>装好 Linux、能远程连接</td><td>独立搭一台 CentOS 7 虚拟机</td></tr><tr><td>第 2 章 常用命令</td><td>13</td><td>文件/目录/查找/编辑</td><td>不用鼠标完成日常文件操作</td></tr><tr><td>第 3 章 用户与权限</td><td>5</td><td>用户/组/rwx</td><td>看懂并修改权限</td></tr><tr><td>第 4 章 系统管理</td><td>14</td><td>软件/服务/网络/进程/监控</td><td>独立维护一台服务器</td></tr><tr><td>第 5 章 实战部署</td><td>18</td><td>单机软件 + 大数据集群</td><td>按文档部署并排错</td></tr></tbody></table></div><h3>动手做</h3><ol><li>先通读本讲义前言和课程地图，知道每章在讲什么。</li><li>搭好一台 CentOS 7 虚拟机，配好 SSH。</li><li>按章节顺序学习，每节至少亲手敲一遍示例。</li><li>每章结束做章末自测，错题记下来。</li><li>考前用知识树 + 命令速查做三轮复习。</li></ol><h3>小白避坑</h3><ul class="pitfalls"><li>只看视频不动手，形成“看懂了”的错觉。</li><li>追求一次记住所有命令，结果什么都没记住；先记高频 20 个。</li><li>遇到报错就跳过，不查原因；报错是最好的老师。</li><li>环境没搭好就急着学命令，后面步步卡。</li></ul><div class="mnemonic"><b>记忆口诀</b>“<strong>先环境，后命令；先懂再做，做完再测；三轮复习，错题为王。</strong>”</div><h3>3 分钟自测</h3><details class="quiz"><summary><span class="qno">Q1</span><span>这套课的 5 章主线是什么？</span></summary><div class="answer">答：环境 → 命令 → 权限 → 系统管理 → 实战部署。</div></details><details class="quiz"><summary><span class="qno">Q2</span><span>每节建议按哪四步学？</span></summary><div class="answer">答：懂、练、测、记。</div></details><details class="quiz"><summary><span class="qno">Q3</span><span>为什么要做错题本？</span></summary><div class="answer">答：错题暴露的是理解漏洞，复习错题比重复看会的内容效率更高。</div></details><a class="top-link" href="#top">↑ 回到顶部</a></section>
+
+  <section class="summary" id="summary" style="--c:#5B6B84">
+    <h2>第 0 章 · 小结与自测</h2>
+    <p>先合上讲义，用下面的知识网回忆每个分支；想不起来的，再回到对应小节。</p>
+    <pre class="ascii">课程地图
+├─ 第 1 章 基础与环境：OS/Linux/虚拟机/安装/远程/快照
+├─ 第 2 章 常用命令：目录/文件/查找/管道/重定向/vi
+├─ 第 3 章 用户与权限：root/用户组/rwx/chmod/chown
+├─ 第 4 章 系统管理：软件/服务/网络/进程/监控/环境/传输/压缩
+└─ 第 5 章 实战部署：MySQL/Tomcat/Nginx/MQ/Redis/ES + 大数据集群</pre>
+    <h3>高频命令/操作速查</h3>
+    <div class="table-wrap"><table style="min-width:520px"><thead><tr><th>命令/操作</th><th>作用</th><th>备注</th></tr></thead><tbody><tr><td>先懂</td><td>看本讲义的核心概念/类比</td><td>不要一上来背命令</td></tr><tr><td>再练</td><td>在虚拟机里逐条敲，观察输出</td><td>必须动手</td></tr><tr><td>后测</td><td>做每节自测 + 章末自测</td><td>检验是否真会</td></tr><tr><td>再记</td><td>把命令/报错写进自己的笔记</td><td>形成肌肉记忆</td></tr></tbody></table></div>
+    <h3>易混概念对比</h3>
+    <div class="table-wrap"><table style="min-width:520px"><thead><tr><th>概念 A</th><th>概念 B</th><th>区别</th></tr></thead><tbody><tr><td>看懂</td><td>敲过</td><td>看懂只是理解，敲过才是会用；两者缺一不可</td></tr><tr><td>背命令</td><td>记场景</td><td>命令会忘，场景（要做什么）不容易忘；按场景记命令</td></tr><tr><td>学一遍</td><td>复习三轮</td><td>第一轮懂、第二轮串、第三轮查漏；复习比初学更重要</td></tr></tbody></table></div>
+    <h3>通关自测</h3>
+    <details class="quiz"><summary><span class="qno">Q1</span><span>这套课 5 章的主线是什么？</span></summary><div class="answer">答：环境 → 命令 → 权限 → 系统管理 → 实战部署。</div></details><details class="quiz"><summary><span class="qno">Q2</span><span>为什么不能只看视频不动手？</span></summary><div class="answer">答：Linux 是操作技能，必须通过敲命令、看输出、排错形成肌肉记忆。</div></details><details class="quiz"><summary><span class="qno">Q3</span><span>学完一节最少要做哪三件事？</span></summary><div class="answer">答：用自己的话复述核心、亲手敲一遍、做自测题。</div></details>
+  </section>
+
+  <div class="next"><span>继续学习</span><a href="chapter-1.html">第 1 章 Linux 基础与环境搭建 →</a></div>
+  <div class="next"><span>上一章</span><a href="index.html">← 返回目录</a></div>
+</main>
+<footer class="footer">
+  <span>基于黑马程序员《新版 Linux 零基础快速入门到精通》60 节课程整理</span>
+  <span>个人学习笔记 · 建议配合讲义和知识树使用</span>
+</footer>
+<button class="top-btn" aria-label="回到顶部">↑</button>
+<script src="app.js" defer></script>
+</body>
+</html>
