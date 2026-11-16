@@ -4,11 +4,9 @@
 
 ## 在线阅读
 
-开启 GitHub Pages 后访问：
+https://lukaup.github.io/linux-notes/
 
-```
-https://<你的GitHub用户名>.github.io/linux-notes/
-```
+仓库地址：https://github.com/lukaup/linux-notes
 
 ## 内容
 
